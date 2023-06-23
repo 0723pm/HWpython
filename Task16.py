@@ -9,7 +9,7 @@
 
 from random import randint as rd
 n = int(input("Введите кол-во элементов: "))
-numbers = list() # []
+numbers = list() 
 count = 0
 for i in range(n):
     numbers.append(rd(1, 21))
