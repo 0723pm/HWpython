@@ -2,3 +2,11 @@
 # Выдать без повторений в порядке возрастания все те числа, которые встречаются в обоих наборах.
 # Пользователь вводит 2 числа. n — кол-во элементов первого множества. 
 # m — кол-во элементов второго множества. Затем пользователь вводит сами элементы множеств.
+
+from random import randint
+set_numN = set(randint(1, 10) for i in range(int(input("Введите кол-во элементов множества N: "))))
+print(set_numN)
+set_numM = set(randint(1, 10) for i in range(int(input("Введите кол-во элементов множества M: "))))
+print(set_numM)
+setS = sorted(set_numN.intersection(set_numM))
+print(*setS)
